@@ -35,7 +35,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.mapfetchertest.app.GeoDataCallingTest</mainClass>
+                            <mainClass>com.mapfetchertest.app.GeoDataBySoap</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -102,12 +102,24 @@
           <artifactId>slf4j-api</artifactId>
           <version>1.7.5</version>
       </dependency>
+
       <dependency>
           <groupId>ch.qos.logback</groupId>
           <artifactId>logback-classic</artifactId>
           <version>1.0.13</version>
       </dependency>
+
       <!-- END Logging -->
+      <dependency>
+          <groupId>com.sun.jersey</groupId>
+          <artifactId>jersey-client</artifactId>
+          <version>1.17.1</version>
+      </dependency>
+      <dependency>
+          <groupId>com.google.code.gson</groupId>
+          <artifactId>gson</artifactId>
+          <version>1.7.1</version>
+      </dependency>
 
 
   </dependencies>

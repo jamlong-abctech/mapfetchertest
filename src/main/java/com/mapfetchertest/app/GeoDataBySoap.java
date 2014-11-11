@@ -8,9 +8,9 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.Date;
 
-public class GeoDataCallingTest
+public class GeoDataBySoap
 {
-    private static final Logger log = LoggerFactory.getLogger(GeoDataCallingTest.class);
+    private static final Logger log = LoggerFactory.getLogger(GeoDataBySoap.class);
 
     public static void main( String[] args )
     {
@@ -141,7 +141,8 @@ public class GeoDataCallingTest
         }
 
         // Get Kommune
-        RecordSet resultsQuery = mapserverService.queryFeatureData(mapserverService.getDefaultMapName(),10 , queryFilter);
+        RecordSet resultsQuery = mapserverService.queryFeatureData(mapserverService.getDefaultMapName(), 10,
+                queryFilter);
         Field[] fields = resultsQuery.getFields().getFieldArray();
         int i = 0;
         Object[] rec = resultsQuery.getRecords()[0].getValues();
